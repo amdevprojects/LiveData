@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/navigation_main_activity"
+            app:startDestination="@id/fragmentOne">
+
+    <fragment
+            android:id="@+id/fragmentOne"
+            android:name="com.example.livedata.fragments.FragmentOne"
+            android:label="fragment_fragment_one"
+            tools:layout="@layout/fragment_fragment_one">
+        <action
+                android:id="@+id/action_fragmentOne_to_randomWordsFragment"
+                app:destination="@id/randomWordsFragment"/>
+        <action
+                android:id="@+id/action_fragmentOne_to_fragmentTransformation"
+                app:destination="@id/fragmentTransformation"/>
+    </fragment>
+
+    <fragment
+            android:id="@+id/randomWordsFragment"
+            android:name="com.example.livedata.fragments.RandomWordsFragment"
+            android:label="fragment_random_words"
+            tools:layout="@layout/fragment_random_words"/>
+
+    <fragment
+            android:id="@+id/fragmentTransformation"
+            android:name="com.example.livedata.fragments.FragmentTransformation"
+            android:label="fragment_fragment_transformation"
+            tools:layout="@layout/fragment_tranformation">
+        <action
+                android:id="@+id/action_fragmentTransformation_to_fragmentMapTransformation"
+                app:destination="@id/fragmentMapTransformation"/>
+        <action
+                android:id="@+id/action_fragmentTransformation_to_fragmentSwitchMapTransformation"
+                app:destination="@id/fragmentSwitchMapTransformation"/>
+    </fragment>
+
+    <fragment
+            android:id="@+id/fragmentMapTransformation"
+            android:name="com.example.livedata.fragments.FragmentMapTransformation"
+            android:label="fragment_fragment_map_transformation"
+            tools:layout="@layout/fragment_fragment_map_transformation"/>
+
+    <fragment
+            android:id="@+id/fragmentSwitchMapTransformation"
+            android:name="com.example.livedata.fragments.FragmentSwitchMapTransformation"
+            android:label="fragment_fragment_switch_map_transformation"
+            tools:layout="@layout/fragment_fragment_switch_map_transformation"/>
+
+</navigation>
