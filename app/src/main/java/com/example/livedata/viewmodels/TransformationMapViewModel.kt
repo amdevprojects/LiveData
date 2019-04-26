@@ -5,7 +5,7 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.Transformations
 import androidx.lifecycle.ViewModel
 
-class TransformationViewModel: ViewModel() {
+class TransformationMapViewModel: ViewModel() {
 
     private val word = MutableLiveData<String>()
 

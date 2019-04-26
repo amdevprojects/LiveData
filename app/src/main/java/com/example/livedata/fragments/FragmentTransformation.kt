@@ -6,12 +6,8 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.lifecycle.Observer
-import androidx.lifecycle.ViewModelProviders
 import androidx.navigation.Navigation
 import com.example.livedata.R
-import com.example.livedata.utils.WordGenerator
-import com.example.livedata.viewmodels.TransformationViewModel
 import kotlinx.android.synthetic.main.fragment_tranformation.*
 
 /**

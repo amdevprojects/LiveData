@@ -10,7 +10,7 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import com.example.livedata.R
 import com.example.livedata.utils.WordGenerator
-import com.example.livedata.viewmodels.TransformationViewModel
+import com.example.livedata.viewmodels.TransformationMapViewModel
 import kotlinx.android.synthetic.main.fragment_fragment_map_transformation.*
 
 /**
@@ -30,7 +30,7 @@ class FragmentMapTransformation : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        val transformationViewModel = ViewModelProviders.of(this).get(TransformationViewModel::class.java)
+        val transformationViewModel = ViewModelProviders.of(this).get(TransformationMapViewModel::class.java)
         transformationViewModel.newWord.observe(this, Observer {
             textWord.text = it
         })
